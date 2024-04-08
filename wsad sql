@@ -1,0 +1,54 @@
+
+INSERT INTO Books (title, description, publishing_year, numbers_of_books, publishing_house_id, category_id)
+VALUES 
+    ('Dzieci diuny', '"Dzieci Diuny", trzeci tom kultowego cyklu Franka Herberta, to pasjonująca i pełna przygód opowieść o walce, magii i rodowej zemście..', '2022', '3', '1', '1'),
+    ('Mesjasz Diuny', 'Futurystyczna powieść przedstawia dalsze losy planety Arrakis oraz jej bohaterów. Rzuć się razem z nimi w fascynujący, przepełniony mistyką świat wojny, polityki i bezwzględnej zakulisowej walki o władzę nad wszechświatem.', '2022', '4', '1', '2'),
+    ('Diuna.', '"Diuna" to tom pierwszy słynnego cyklu powieściowego "Kroniki Diuny". Czytelnik ma okazję poznać pustynną planetę Arrakis, którą nazywa się także Diuną. ', '2022', '3', '1', '3'),
+    ('Ciemny las. Wspomnienie o przeszłości Ziemi.', 'Drugi tom trylogii „Wspomnienie o przeszłości Ziemi”, największego w ostatnich latach wydarzenia w światowej fantastyce naukowej, porównywalnego z klasycznymi cyklami „Fundacja” i „Diuna”.', '2023', '4', '4', '4'),
+    ('Góra pod morzem', 'Ludzkość wreszcie odkryła obcą inteligencję – gatunek ośmiornic mający własny język oraz kulturę. Zaczyna się globalna rywalizacja o kontrolę nad nimi.', '2024', '6', '5', '5'),
+    ('My', 'Mieszkańcy Państwa Jedynego nie znają wolności ani swobody. Takie rzeczy są całkowicie zabronione, ponieważ mogą prowadzić do powstania chaosu.', '2020', '2', '6', '6'),
+    ('Solaris', 'Bezradność to stan, który ogranicza bardziej niż strach. Niemoc wobec tajemnej struktury, która uświadamia, że ludzki umysł ma granice', '2022', '8', '6', '7'),
+    ('Katedra', 'W układzie gwiazdy Lévie doszło do tragicznego wydarzenia. To tam w wyniku wypadku holownik "Sagittarius" musiał znaleźć schronienie na jednej z planetoid.', '2020', '5', '6', '8'),
+    ('Fiasko', '"Fiasko" to kolejne arcydzieło Stanisława Lema - zachwyca i zaskakuje.', '2024', '3', '4', '9'),
+    ('Cyberpunk 2077. Bez przypadku', '"Cyberpunk 2077. Bez przypadku" zabiera czytelnika w szaloną podróż do pełnego zepsucia świata przyszłości, w którym ludzie połączyli się z maszynami, a dobro i zło często stają się nie do odróżnienia.', '2023', '4', '10', '10');
+
+INSERT INTO Elementary_books (book_id, library_id, status_id, wear)
+VALUES 
+    ('1', '1', '1', 'Bardzo dobry'),
+    ('2', '2', '1', 'Dobry'),
+    ('3', '3', '1', 'Średni'),
+    ('4', '4', '1', 'Średni'),
+    ('5', '5', '1', 'Dobry'),
+    ('6', '6', '1', 'Słaby'),
+    ('7', '7', '1', 'Bardzo słaby'),
+    ('8', '8', '1', 'Bardzo dobry'),
+    ('9', '9', '1', 'Średni'),
+    ('10', '10', '1', 'Słaby');
+
+
+INSERT INTO Rents (user_id, elementary_book_id, rent_date, return_date, rental_time)
+VALUES 
+    ('1', '1', '2024-04-06', '2024-04-13', '7'),
+    ('2', '2', '2024-04-06', '2024-04-20', '14'),
+    ('3', '3', '2024-04-06', '2024-04-27', '21'),
+    ('4', '4', '2024-04-06', '2024-04-13', '7'),
+    ('5', '5', '2024-04-06', '2024-04-13', '7'),
+    ('6', '6', '2024-04-06', '2024-04-13', '7'),
+    ('7', '7', '2024-04-06', '2024-04-13', '7'),
+    ('8', '8', '2024-04-06', '2024-04-13', '7'),
+    ('9', '9', '2024-04-06', '2024-04-13', '7'),
+    ('10', '10', '2024-04-06', '2024-04-13', '7');
+
+
+ INSERT INTO Users (name, email, phone_number, status_id, indeks)
+ VALUES
+     ('Jan Kowalski', 'jan.kowalski@gmail.com', '123456789', '1', '285012'),
+     ('Anna Kranik', 'anna.kranik@maupa.com', '987560921', '1', '784672'),
+     ('Paweł Modry', 'pawel.modry@wp.pl', '890371245', '1', '098456'),
+     ('Adrian Zkopenhagi', 'yung.adisz@lean.pl', '092375811', '1', '788432'),
+     ('OZZY BABY', 'ozzy.baby4@mix.tape.com', '333333333', '1', '585031'),
+     ('Magda Janik', 'magda.janik@gmail.com', '038591234', '1', '159301'),
+     ('Michał Baron', 'mistrz.slaska190cm@slask.com', '222101154', '1', '849057'),
+     ('Maciek Mackowski', 'maciek.mackowski@gmail.com', '144442222', '1', '543210'),
+     ('Roberto Carlos', 'roberto.carlos@wp.pl', '800000001', '1', '891234'),
+    ('Piotr Paweł', 'piotripawel@sklep.com', '4857731222', '1','546842');
